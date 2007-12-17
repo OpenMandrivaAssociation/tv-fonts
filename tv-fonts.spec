@@ -7,7 +7,6 @@ Group:			Video
 License:		GPL
 #OLD_STILL_VALID_URL: http://www.strusel007.de/linux/xawtv/
 URL:			http://bytesex.org/xawtv
-BuildRoot:		%{_tmppath}/%{name}-%{version}
 BuildArch:		noarch
 BuildRequires:		bdftopcf
 BuildRequires:          mkfontdir
