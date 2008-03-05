@@ -1,7 +1,7 @@
 Summary:		Fonts for TV programs (fbtv, motv, ttv, xawtv)
 Name:			tv-fonts
 Version:		1.1
-Release:		%mkrel 7
+Release:		%mkrel 8
 Source0:		%{name}-%{version}.tar.bz2
 Group:			Video
 License:		GPL
@@ -17,14 +17,6 @@ Requires:		mkfontdir
 
 %description
 Tv-fonts is a set of fonts, mainly used by xawtv.
-
-They used to be bundled with xawtv but starting with version 3.75,
-xawtv doesn't come with the fonts bundled any more.
-
-So come tv-fonts.
-
-This package is required by xawtv-common
-
 
 %prep
 %setup -q
