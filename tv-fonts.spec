@@ -1,7 +1,7 @@
 Summary:		Fonts for TV programs (fbtv, motv, ttv, xawtv)
 Name:			tv-fonts
 Version:		1.1
-Release:		%mkrel 13
+Release:		%mkrel 14
 Source0:		%{name}-%{version}.tar.bz2
 Group:			Video
 License:		GPL
