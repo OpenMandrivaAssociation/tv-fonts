@@ -26,7 +26,8 @@ Tv-fonts is a set of fonts, mainly used by xawtv.
 # Geoff -- only unset if DISPLAY is present or it will return 1 and
 # build will barf.
 [ -n "$DISPLAY" ] && unset DISPLAY
-%make
+# SMP build may lead to random errors
+make
 
 %install
 mkdir -p %{buildroot}%{_datadir}/fonts/misc/
@@ -50,20 +51,14 @@ EOF
 
 %post
 cd %{_datadir}/fonts/misc
-%{_prefix}/bin/mkfontdir
-if [ -f /var/lock/subsys/xfs ]; then
-    service xfs restart || true
-fi
+%{_bindir}/mkfontdir
 test -n "$DISPLAY" && xset fp rehash || true
 
 
 %postun
 if [ "$1" = "0" ]; then
     cd %{_datadir}/fonts/misc
-    %{_prefix}/bin/mkfontdir
-    if [ -f /var/lock/subsys/xfs ]; then
-	service xfs restart || true
-    fi
+    %{_bindir}/mkfontdir
     test -n "$DISPLAY" && xset fp rehash || true
 fi
 
