@@ -1,7 +1,7 @@
 Summary:	Fonts for TV programs (fbtv, motv, ttv, xawtv)
 Name:		tv-fonts
 Version:	1.1
-Release:	21
+Release:	22
 Group:		Video
 License:	GPLv2
 Url:		http://bytesex.org/xawtv
