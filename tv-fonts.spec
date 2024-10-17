@@ -4,7 +4,7 @@ Version:	1.1
 Release:	27
 Group:		Video
 License:	GPLv2
-Url:		http://bytesex.org/xawtv
+Url:		https://bytesex.org/xawtv
 Source0:	%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	bdftopcf
